@@ -212,3 +212,9 @@ button:focus {
 .end-emoji {
   font-size: 80px;
 }
+
+.restart-btn {
+  background-color: #86f829;
+  border: 2px solid #fcc02a;
+  color: #000;
+}

@@ -50,10 +50,15 @@ function endGame() {
                     <h2>Game Over</h2> 
                     <h3>${endMessage}</h3>
                     <p class="end-emoji">${endEmoji}</p>
-                    <button class="new-game" id="new-game">New Game</button>
+                    <button class="restart-btn" id="restart-btn">Restart Game</button>
                 </div>
                 `;
   }, 1500);
+  setTimeout(() => {
+    document.getElementById("restart-btn").addEventListener("click", () => {
+      location.reload();
+    });
+  }, 2000);
 }
 
 document.getElementById("attack-button").addEventListener("click", attack);
